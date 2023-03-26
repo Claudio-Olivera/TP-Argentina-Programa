@@ -26,12 +26,28 @@ public class Partido {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Ingrese la ruta del archivo con los resultados de los partidos: ");
         String rutaArchivo = scanner.nextLine();
-//      String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\AddMaven\\AddMaven\\src\\main\\java\\org\\Addmaven\\resultados.csv";
+//      String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\Arg-Programa\\TpIntegrador\\src\\main\\java\org\\TpIntegrador\\resultados.csv"
         List<String> lineas = Files.lines(Paths.get(rutaArchivo))
                 .skip(1)  // saltar la primera línea
                 .collect(Collectors.toList());
         return lineas;
     }
+
+    /**
+     * Resolución para punto 1, en la nueva version cambian las posiciones, ya que se agrega una columna al archivo.
+     */
+
+    /**
+     *     public static Partido convertirLineaEnPartido(String lineas) {
+     *         String[] datosPartido = lineas.split(";");
+     *         Equipo equipo1 = new Equipo(datosPartido[0]);
+     *         Equipo equipo2 = new Equipo(datosPartido[3]);
+     *         int golesEquipo1 = Integer.parseInt(datosPartido[1]);
+     *         int golesEquipo2 = Integer.parseInt(datosPartido[2]);
+     *         return new Partido(equipo1, equipo2, golesEquipo1, golesEquipo2);
+     *     }
+     */
+
 
     public static Partido convertirLineaEnPartido(String lineas) {
         String[] datosPartido = lineas.split(";");

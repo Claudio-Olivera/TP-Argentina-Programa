@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11805619-acc0-45e3-8661-1723626496a3" name="Changes" comment="Add Maven">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" afterDir="false" />
+    <list default="true" id="11805619-acc0-45e3-8661-1723626496a3" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/TpIntegrador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/TpIntegrador.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Partido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Pronostico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Ronda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/pronostico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/pronostico.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/resultados.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +90,27 @@
       <option name="project" value="LOCAL" />
       <updated>1679766164519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Lombok,and commentaries in all clases">
+      <created>1679853770887</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679853770887</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <created>1679853901106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679853901106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Maven" />
+    <MESSAGE value="Add Lombok,and commentaries in all clases" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
