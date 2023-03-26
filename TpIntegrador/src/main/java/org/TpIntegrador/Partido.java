@@ -1,5 +1,8 @@
 package org.TpIntegrador;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -8,45 +11,22 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Partido {
     private Ronda ronda;
-    private int golesEquipo1;
-    private int golesEquipo2;
     private Equipo equipo1;
     private Equipo equipo2;
-
-
-    public Partido(Ronda ronda,Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
-        this.ronda = ronda;
-        this.equipo1 = equipo1;
-        this.equipo2 = equipo2;
-        this.golesEquipo1 = golesEquipo1;
-        this.golesEquipo2 = golesEquipo2;
-    }
-
-
-
-    public Equipo getEquipo1() {
-        return equipo1;
-    }
-
-    public Equipo getEquipo2() {
-        return equipo2;
-    }
-
-    public int getGolesEquipo1() {
-        return golesEquipo1;
-    }
-
-    public int getGolesEquipo2() {
-        return golesEquipo2;
-    }
+    private int golesEquipo1;
+    private int golesEquipo2;
 
     public static List<String> CapturarPartidoArchivo() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Ingrese la ruta del archivo con los resultados de los partidos: ");
         String rutaArchivo = scanner.nextLine();
-//        String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\AddMaven\\AddMaven\\src\\main\\java\\org\\Addmaven\\resultados.csv";
+//      String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\AddMaven\\AddMaven\\src\\main\\java\\org\\Addmaven\\resultados.csv";
         List<String> lineas = Files.lines(Paths.get(rutaArchivo))
                 .skip(1)  // saltar la primera línea
                 .collect(Collectors.toList());

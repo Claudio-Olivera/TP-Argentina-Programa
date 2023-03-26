@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11805619-acc0-45e3-8661-1723626496a3" name="Changes" comment="Add Maven">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/TpIntegrador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/TpIntegrador.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Partido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Pronostico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/Ronda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/pronostico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/pronostico.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrador/src/main/java/org/TpIntegrador/resultados.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,14 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Claudio/Desktop/Arg-Programa/TpIntegrador/src/main/java/org/TpIntegrador&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Claudio/Desktop/Arg-Programa/TpIntegrador/src/main/java/org/TpIntegrador",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Claudio\Desktop\Arg-Programa\TpIntegrador\src\main\java\org\TpIntegrador" />
