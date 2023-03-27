@@ -1,4 +1,4 @@
-package org.TpIntegrador;
+package org.ComparadorPyR;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -76,5 +76,4 @@ public class Ronda {
             System.out.println("Puntos ganados por " + persona + ": " + puntos);
         }
     }
-
 }

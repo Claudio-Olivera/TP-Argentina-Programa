@@ -1,4 +1,4 @@
-package org.TpIntegrador;
+package org.ComparadorPyR;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

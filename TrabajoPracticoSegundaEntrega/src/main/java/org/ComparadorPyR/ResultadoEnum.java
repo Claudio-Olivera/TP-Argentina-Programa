@@ -1,4 +1,4 @@
-package org.TpIntegrador;
+package org.ComparadorPyR;
 
 /**
  * No implementado.

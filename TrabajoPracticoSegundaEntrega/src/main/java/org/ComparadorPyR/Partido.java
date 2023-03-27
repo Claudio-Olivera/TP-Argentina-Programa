@@ -1,4 +1,4 @@
-package org.TpIntegrador;
+package org.ComparadorPyR;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,7 +26,7 @@ public class Partido {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Ingrese la ruta del archivo con los resultados de los partidos: ");
         String rutaArchivo = scanner.nextLine();
-//      String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\Arg-Programa\\TpIntegrador\\src\\main\\java\org\\TpIntegrador\\resultados.csv"
+     //  String rutaArchivo = "C:\\Users\\Claudio\\Desktop\\TrabajoPracticoIntegrador\\src\\main\\java\\org\\ComparadorPyR\\resultados.csv";
         List<String> lineas = Files.lines(Paths.get(rutaArchivo))
                 .skip(1)  // saltar la primera línea
                 .collect(Collectors.toList());

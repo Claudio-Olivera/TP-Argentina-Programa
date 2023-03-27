@@ -1,4 +1,4 @@
-package org.TpIntegrador;
+package org.ComparadorPyR;
 import java.io.IOException;
 import java.util.List;
 
@@ -8,5 +8,6 @@ public class Main {
     }
 }
 
-//              C:\Users\Claudio\Desktop\Arg-Programa\TpIntegrador\src\main\java\org\TpIntegrador\resultados.csv
-//              C:\Users\Claudio\Desktop\Arg-Programa\TpIntegrador\src\main\java\org\TpIntegrador\pronostico.csv
+//              C:\Users\Claudio\Desktop\TrabajoPracticoIntegrador\src\main\java\org\ComparadorPyR\resultados.csv
+
+//              C:\Users\Claudio\Desktop\TrabajoPracticoIntegrador\src\main\java\org\ComparadorPyR\pronostico.csv
