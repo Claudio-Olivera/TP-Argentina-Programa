@@ -1,0 +1,11 @@
+
+’
+java:S1192U"pDefine a constant instead of duplicating this literal "+++++++++++++++++++++++++++++++++++++++++++++++" 3 times.(åÇ‘¨ýÿÿÿÿ8Ä®Œˆù0
+]	java:S125"<This block of commented-out lines of code should be removed.(”Ó¦óûÿÿÿÿ8¨¯Œˆù0
+^
+java:S1126 "AReplace this if-then-else statement by a single return statement.(Ÿ®ÍÌ8ª¯Œˆù0
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(åÇ‘¨ýÿÿÿÿ8­¯Œˆù0
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(åÇ‘¨ýÿÿÿÿ8®¯Œˆù0
+U	java:S106q"9Replace this use of System.out or System.err by a logger.(Ã©Ò˜8¯¯Œˆù0
+Z	java:S106u"9Replace this use of System.out or System.err by a logger.(žÄÔ‰þÿÿÿÿ8°¯Œˆù0
+[	java:S106‘"9Replace this use of System.out or System.err by a logger.(åÇ‘¨ýÿÿÿÿ8°¯Œˆù0

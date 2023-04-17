@@ -1,0 +1,13 @@
+
+y
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "lineas".(ù×’¨úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ý©¦Ëøÿÿÿÿ
+_
+java:S2095"DUse try-with-resources or close this "Stream" in a "finally" clause.(ù×’¨úÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç°ßä
+@
+java:S3457"%String contains no format specifiers.(™Ô÷´ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(™Ô÷´ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(’­‰ùÿÿÿÿ
+h
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹

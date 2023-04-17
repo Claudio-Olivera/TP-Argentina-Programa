@@ -1,0 +1,19 @@
+
+l
+java:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(°®×´8„¨úÓø0
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(şõ¾úÿÿÿÿ8ÛÚ‡¸ø0
+q
+java:S2095""OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ó«ò«ıÿÿÿÿ8ÜÚ‡¸ø0
+q
+java:S20952"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ıèáùÿÿÿÿ8„¨úÓø0
+t
+java:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8İÚ‡¸ø0
+t
+java:S2737'"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Š¨úÓø0
+t
+java:S27379"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8‹¨úÓø0
+t
+java:S2737V"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Œ¨úÓø0
+Q
+java:S1128"/Remove this unused import 'org.example.Equipo'.(ˆ™¦­ıÿÿÿÿ8€„îàø0

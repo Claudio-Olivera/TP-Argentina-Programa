@@ -1,0 +1,12 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+E
+java:S1066"/Merge this if statement with the enclosing one.(ÁòîŞ
+2
+java:S1700"Rename field "conexion"(úíìæüÿÿÿÿ
+p	java:S116	"VRename this field "JDBC_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÔÎøşÿÿÿÿ
+<
+java:S1170	"!Make this final field static too.(ãÔÎøşÿÿÿÿ
+Z
+java:S2147"DCombine this catch with the one at line 18, which has the same body.(”ı¾
