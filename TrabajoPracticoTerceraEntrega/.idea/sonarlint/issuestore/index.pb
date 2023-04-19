@@ -13,8 +13,6 @@ S
 #src/main/java/dao/DaoRondaimpl.java,4\b\4bbace6244315978c6cc45f537cd5a924e72515f
 Y
 )src/main/java/dao/DaoPronostiocoimpl.java,4\7\4715ba03a25f59d0f3ee93ca9a05868233021635
-O
-src/main/java/dao/Conexion.java,5\1\511fe594ca8a7945ec44b0660ef3a96fed5ccd48
 U
 %src/main/java/dao/DaoPartidoimpl.java,c\2\c29eb3bacc0d252349ea2540e1ed55bcd75d3358
 U
@@ -27,3 +25,5 @@ S
 #src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 X
 (src/main/java/interfaces/DaoPartido.java,7\b\7b2329e4a041dd9a1962d00f36543cdf54dbe58d
+O
+src/main/java/dao/Conexion.java,5\1\511fe594ca8a7945ec44b0660ef3a96fed5ccd48

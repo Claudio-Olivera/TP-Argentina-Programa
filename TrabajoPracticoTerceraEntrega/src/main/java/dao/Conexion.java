@@ -9,7 +9,7 @@ public class Conexion {
     private final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/trabajointegrador3?serverTimezone=UTC";
     private String user = "root";
-    private String password = "narizota2615";
+    private String password = "root";
 
     public void conectar() {
         try {
