@@ -9,60 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DaoEquipoimpl extends Conexion implements DaoEquipo {
-    @Override
-    public void registrar(Equipo equip) throws Exception {
-        try {
-            this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("INSERT INTO equipos (nombre,descripcion) VALUES (?, ?)");
-
-            st.setString(1, equip.getNombre());
-            st.setString(2, equip.getDescripcion());
 
 
-            st.executeUpdate();
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            this.cerrar();
-        }
-
-    }
-
-    @Override
-    public void modificar(Equipo equip) throws Exception {
-        try {
-            this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("UPDATE equipos SET nombre = ? WHERE nombre = ?");
-
-            st.setString(1, equip.getNombre());
-            st.setString(2, equip.getDescripcion());
 
 
-            st.executeUpdate();
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            this.cerrar();
-        }
-
-    }
-
-    @Override
-    public void eliminar(Equipo equip) throws Exception {
-        try {
-            this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("DELETE FROM equipos WHERE nombre = ?");
-
-            st.setString(1, equip.getNombre());
-
-            st.executeUpdate();
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            this.cerrar();
-        }
-
-    }
 
     @Override
     public List<Equipo> listar() throws Exception {

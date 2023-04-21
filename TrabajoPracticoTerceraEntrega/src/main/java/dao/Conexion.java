@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Conexion {
     protected Connection conexion;
     private final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private String url = "jdbc:mysql://localhost:3306/trabajointegrador3?serverTimezone=UTC";
+    private final String url = "jdbc:mysql://localhost:3306/trabajointegrador3?serverTimezone=UTC";
     private String user = "root";
     private String password = "root";
 

@@ -1,41 +1,23 @@
 package dao;
 
 import interfaces.DaoRonda;
-import org.example.Equipo;
+
 import org.example.Ronda;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class DaoRondaimpl extends Conexion implements DaoRonda {
-    @Override
-    public void registrar(Ronda rond) throws Exception {
-        try {
-            this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("INSERT INTO rondas (nro) VALUES (?)");
 
-
-            st.setInt(1, rond.getNro());
-
-
-            st.executeUpdate();
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            this.cerrar();
-        }
-
-    }
 
     @Override
     public void modificar(Ronda rond) throws Exception {
         try {
             this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("UPDATE rondas SET nombre = ? WHERE nro = ?");
+            PreparedStatement st = this.conexion.prepareStatement("UPDATE rondas SET punto = ? ");
 
-            st.setInt(1, rond.getNro());
+            st.setInt(1, rond.getPuntos());
 
 
             st.executeUpdate();
@@ -48,44 +30,31 @@ public class DaoRondaimpl extends Conexion implements DaoRonda {
 
     }
 
-    @Override
-    public void eliminar(Ronda rond) throws Exception {
-        try {
-            this.conectar();
-            PreparedStatement st = this.conexion.prepareStatement("DELETE FROM rondas WHERE nro = ?");
 
-            st.setInt(1, rond.getNro());
-
-            st.executeUpdate();
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            this.cerrar();
-        }
-
-    }
 
     @Override
-    public List<Ronda> listar() throws Exception {
-        List<Ronda> lista = null;
+    public int listar() throws Exception {
+        int puntos = 0;
         try {
             this.conectar();
             PreparedStatement st = this.conexion.prepareStatement("SELECT * FROM rondas");
 
-            lista = new ArrayList<>();
+
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 Ronda ronda = new Ronda();
-                ronda.setNro(rs.getInt("nro"));
+                ronda.setPuntos(rs.getInt("punto"));
 
 
-                lista.add(ronda);
+                puntos= ronda.getPuntos();
             }
         } catch (Exception e) {
             throw e;
         } finally {
             this.cerrar();
         }
-        return lista;
+        return puntos;
     }
+
+
 }

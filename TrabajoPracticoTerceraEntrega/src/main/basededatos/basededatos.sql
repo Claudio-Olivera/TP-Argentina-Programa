@@ -1,6 +1,6 @@
 CREATE TABLE pronosticos (
-ronda INT,
-nmr INT,
+  ronda INT,
+  nmr INT,
   Participante VARCHAR(50),
   Equipo1 VARCHAR(50),
   Gana_Equipo1 VARCHAR(1),
@@ -11,12 +11,7 @@ nmr INT,
   
 );
 
-UPDATE pronosticos
-SET resultado = CASE
-    WHEN Gana_Equipo1 = 'x' THEN CONCAT('gana ', Equipo1, ronda, nmr)
-    WHEN Gana_Equipo2 = 'x' THEN CONCAT('gana ', Equipo2, ronda, nmr)
-    ELSE CONCAT('empate ', ronda, nmr)
-END;
+
 
 INSERT INTO Pronosticos (ronda,nmr,Participante, Equipo1, Gana_Equipo1, Empate, Gana_Equipo2, Equipo2) VALUES
 (1,1,'Mariana', 'Argentina', 'x', NULL, NULL, 'Arabia Saudita'),
@@ -60,6 +55,23 @@ INSERT INTO Pronosticos (ronda,nmr,Participante, Equipo1, Gana_Equipo1, Empate, 
 (2,7,'Jimena', 'Argentina', 'x', NULL, NULL, 'Mexico'),
 (2,8,'Jimena', 'Arabia Saudita', NULL, NULL, 'x', 'Polonia');
 
+UPDATE pronosticos
+SET resultado = CASE
+    WHEN Gana_Equipo1 = 'x' THEN CONCAT('gana ', Equipo1, ronda, nmr)
+    WHEN Gana_Equipo2 = 'x' THEN CONCAT('gana ', Equipo2, ronda, nmr)
+    ELSE CONCAT('empate ', ronda, nmr)
+END;
+
+
+CREATE TABLE partido (
+  Ronda INT,
+  partido INT,
+  Equipo1 VARCHAR(50),
+  Goles_Equipo1 INT,
+  Goles_Equipo2 INT,
+  Equipo2 VARCHAR(50),
+  resultado VARCHAR(50)
+);
 
 
 INSERT INTO partido (Ronda,partido, Equipo1, Goles_Equipo1, Goles_Equipo2, Equipo2)
@@ -74,14 +86,26 @@ VALUES
 (2,8,'Arabia Saudita', 0, 2, 'Polonia');
 
 
-CREATE TABLE partido (
-  Ronda INT,
-  partido INT,
-  Equipo1 VARCHAR(50),
-  Goles_Equipo1 INT,
-  Goles_Equipo2 INT,
-  Equipo2 VARCHAR(50),
-  resultado VARCHAR(50)
+CREATE TABLE equipos (
+nombre varchar(70),
+descripcion varchar(70)
 );
+INSERT INTO equipos (nombre, descripcion)
+VALUES
+   ('Argentina', 'Selección nacional de fútbol de Argentina'),
+   ('Arabia Saudita', 'Selección nacional de fútbol de Arabia Saudita'),
+   ('Polonia', 'Selección nacional de fútbol de Polonia'),
+   ('México', 'Selección nacional de fútbol de México');
+  CREATE TABLE rondas (
+   punto INT
+   );
+   INSERT INTO rondas (punto)
+VALUES(1);
+SELECT * FROM equipos;
+SELECT * FROM rondas;
+SELECT * FROM partido;
+SELECT * FROM pronosticos;
+
+
 
   

@@ -1,5 +1,7 @@
 package org.example;
 
+import Menu.Colores;
+
 public class Pronostico {
     private  int ronda;
 
@@ -21,15 +23,15 @@ public class Pronostico {
 
     @Override
     public String toString() {
-        return "Pronostico{" +
-                "partipante='" + partipante + '\'' +
-                ", equipo1='" + equipo1 + '\'' +
-                ", ganaEquipo1='" + ganaEquipo1 + '\'' +
-                ", empate='" + empate + '\'' +
-                ", ganaEquipo2='" + ganaEquipo2 + '\'' +
-                ", equipo2='" + equipo2 + '\'' +
-                ", resultado='" + resultado + '\'' +
-                '}';
+
+        return Colores.blancoBrillante( "Pronostico:\n" +
+                "\tRonda : " + ronda + "\n" +
+                "\tParticipante: " + partipante + "\n" +
+                "\tEquipo 1: " + equipo1 + "\n" +
+                "\tGana Equipo 1: " + ganaEquipo1 + "\n" +
+                "\tEmpate: " + empate + "\n" +
+                "\tGana Equipo 2: " + ganaEquipo2 + "\n" +
+                "\tEquipo 2: " + equipo2);
     }
 
     public String getResultado() {

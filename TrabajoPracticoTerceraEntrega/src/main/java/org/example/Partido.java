@@ -1,5 +1,7 @@
 package org.example;
 
+import Menu.Colores;
+
 public class Partido {
 
     private int ronda;
@@ -7,26 +9,14 @@ public class Partido {
     private String equipo2;
     private int golesEquipo1;
     private int golesEquipo2;
-    private  String resultado;
+    private  int partido;
 
     @Override
     public String toString() {
-        return "Partido{" +
-                "ronda=" + ronda +
-                ", equipo1='" + equipo1 + '\'' +
-                ", equipo2='" + equipo2 + '\'' +
-                ", golesEquipo1=" + golesEquipo1 +
-                ", golesEquipo2=" + golesEquipo2 +
-                ", resultado='" + resultado + '\'' +
-                '}';
-    }
 
-    public String getResultado() {
-        return resultado;
-    }
 
-    public void setResultado(String resultado) {
-        this.resultado = resultado;
+        return Colores.cianBrillante("Ronda: " + ronda + ", Equipo 1: " + equipo1 + ", Goles: " + golesEquipo1 + ", Equipo 2: " + equipo2 + ", Goles: " + golesEquipo2 + ", Partido: " + partido);
+
     }
 
     public int getRonda() {
@@ -68,6 +58,13 @@ public class Partido {
     public void setGolesEquipo2(int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
-}
 
+    public int getPartido() {
+        return partido;
+    }
+
+    public void setPartido(int partido) {
+        this.partido = partido;
+    }
+}
 
