@@ -11,9 +11,6 @@ import java.util.List;
 public class DaoEquipoimpl extends Conexion implements DaoEquipo {
 
 
-
-
-
     @Override
     public List<Equipo> listar() throws Exception {
         List<Equipo> lista = null;
@@ -24,7 +21,7 @@ public class DaoEquipoimpl extends Conexion implements DaoEquipo {
             lista = new ArrayList<>();
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                Equipo equipo= new Equipo();
+                Equipo equipo = new Equipo();
                 equipo.setNombre(rs.getString("nombre"));
 
                 equipo.setDescripcion(rs.getString("descripcion"));
@@ -38,4 +35,5 @@ public class DaoEquipoimpl extends Conexion implements DaoEquipo {
             this.cerrar();
         }
         return lista;
-}}
+    }
+}

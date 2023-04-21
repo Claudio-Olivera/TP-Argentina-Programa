@@ -22,7 +22,7 @@ public class DaoPronostiocoimpl extends Conexion implements DaoPronostico {
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 Pronostico pronostico = new Pronostico();
-pronostico.setRonda(rs.getInt("ronda"));
+                pronostico.setRonda(rs.getInt("ronda"));
                 pronostico.setParctipante(rs.getString("Participante"));
                 pronostico.setEquipo1(rs.getString("Equipo1"));
                 pronostico.setGanaEquipo1(rs.getString("Gana_equipo1"));
@@ -30,7 +30,6 @@ pronostico.setRonda(rs.getInt("ronda"));
                 pronostico.setGanaEquipo2(rs.getString("Gana_equipo2"));
                 pronostico.setEquipo2(rs.getString("Equipo2"));
                 pronostico.setResultado(rs.getString("resultado"));
-
 
 
                 lista.add(pronostico);
@@ -43,4 +42,5 @@ pronostico.setRonda(rs.getInt("ronda"));
         return lista;
 
 
-}}
+    }
+}

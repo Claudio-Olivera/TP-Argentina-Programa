@@ -40,7 +40,8 @@ public class MenuBaseDatos {
                     DaoEquipo daoEquipo = new DaoEquipoimpl();
                     List<Equipo> listaEquipos = daoEquipo.listar();
                     for (Equipo e : listaEquipos) {
-                        System.out.println(e.toString());}
+                        System.out.println(e.toString());
+                    }
                     System.out.println("-------------------------------------------------------------------------");
                     break;
                 case "2":
@@ -50,7 +51,8 @@ public class MenuBaseDatos {
                     List<Partido> listaPartidos = daoPartido.listar();
                     for (Partido e : listaPartidos) {
                         System.out.println("-------------------------------------------------------------------------");
-                        System.out.println(e.toString());}
+                        System.out.println(e.toString());
+                    }
                     break;
                 case "3":
                     System.out.println("Pronosticos: ");
@@ -59,7 +61,8 @@ public class MenuBaseDatos {
                     List<Pronostico> listaPronosticos = daoPronostico.listar();
                     for (Pronostico e : listaPronosticos) {
                         System.out.println("-------------------------------------------------------------------------");
-                        System.out.println(e.toString());}
+                        System.out.println(e.toString());
+                    }
                     break;
                 case "4":
                     System.out.print(Colores.rojoBrillante("Resultados Pronosticos \n"));

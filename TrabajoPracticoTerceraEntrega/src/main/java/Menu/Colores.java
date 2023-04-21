@@ -47,6 +47,7 @@ public class Colores {
     public static String cian(String texto) {
         return CIAN + texto + RESET;
     }
+
     public static String negroBrillante(String texto) {
         return NEGRO_BRILLANTE + texto + RESET;
     }
@@ -81,6 +82,7 @@ public class Colores {
 
     public static String blanco(String texto) {
         return BLANCO + texto + RESET;
-    }}
+    }
+}
 
 

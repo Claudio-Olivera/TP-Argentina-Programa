@@ -31,7 +31,6 @@ public class DaoRondaimpl extends Conexion implements DaoRonda {
     }
 
 
-
     @Override
     public int listar() throws Exception {
         int puntos = 0;
@@ -46,7 +45,7 @@ public class DaoRondaimpl extends Conexion implements DaoRonda {
                 ronda.setPuntos(rs.getInt("punto"));
 
 
-                puntos= ronda.getPuntos();
+                puntos = ronda.getPuntos();
             }
         } catch (Exception e) {
             throw e;

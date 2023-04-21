@@ -9,7 +9,7 @@ public class Partido {
     private String equipo2;
     private int golesEquipo1;
     private int golesEquipo2;
-    private  int partido;
+    private int partido;
 
     @Override
     public String toString() {

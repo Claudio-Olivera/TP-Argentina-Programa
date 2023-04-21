@@ -19,11 +19,7 @@ public class Ronda {
     public void setPuntos(int puntos) {
         this.puntos = puntos;
     }
-//1-Se guardan los resultados de los partidos en List<String> resultadosPartidos = new ArrayList<>();
-    //la funcion aciertos recibe un pronostico de un participante y verifica si esta en la lista .
 
-    //2 -Si el partido esta en la lista guarda en un mapa el
-// nombre y de asigna un punto .(para cada ronda hay un mapa).
 
     public void mostrarPuntuaciones(Map<String, Integer> puntuaciones, String ronda) {
 
@@ -40,22 +36,22 @@ public class Ronda {
     }
 
     public Integer calcularPuntuacion(Integer resultado) throws Exception {
-        DaoRonda daoronda=new DaoRondaimpl();
-        int puntos =daoronda.listar();
+        DaoRonda daoronda = new DaoRondaimpl();
+        int puntos = daoronda.listar();
         Integer puntuacion = resultado;
-        if (resultado == 5*puntos) {
-            puntuacion += puntos*2;
+        if (resultado == 6 * puntos) {
+            puntuacion += puntos * 2;
         }
         return puntuacion;
     }
 
 
     public Integer calcularfinal(Integer resultado) throws Exception {
-        DaoRonda daoronda=new DaoRondaimpl();
-        int puntos =daoronda.listar();
+        DaoRonda daoronda = new DaoRondaimpl();
+        int puntos = daoronda.listar();
         Integer puntuacion = resultado;
-        if (resultado >= 10*puntos) {
-            puntuacion += puntos*2;
+        if (resultado >= 12 * puntos) {
+            puntuacion += puntos * 2;
         }
         return puntuacion;
     }

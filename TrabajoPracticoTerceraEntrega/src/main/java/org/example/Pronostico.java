@@ -3,7 +3,7 @@ package org.example;
 import Menu.Colores;
 
 public class Pronostico {
-    private  int ronda;
+    private int ronda;
 
     public int getRonda() {
         return ronda;
@@ -19,12 +19,12 @@ public class Pronostico {
     private String empate;
     private String ganaEquipo2;
     private String equipo2;
-    private  String resultado;
+    private String resultado;
 
     @Override
     public String toString() {
 
-        return Colores.blancoBrillante( "Pronostico:\n" +
+        return Colores.blancoBrillante("Pronostico:\n" +
                 "\tRonda : " + ronda + "\n" +
                 "\tParticipante: " + partipante + "\n" +
                 "\tEquipo 1: " + equipo1 + "\n" +
@@ -49,7 +49,6 @@ public class Pronostico {
     public void setPartipante(String partipante) {
         this.partipante = partipante;
     }
-
 
 
     public String getParctipante() {
