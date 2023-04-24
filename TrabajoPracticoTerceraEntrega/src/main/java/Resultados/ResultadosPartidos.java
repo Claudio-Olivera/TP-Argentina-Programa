@@ -10,7 +10,8 @@ import java.util.List;
 
 public class ResultadosPartidos {
 
-
+//"Guarda los resultados de los partidos en una lista y compara con los pronósticos.
+// Si el pronóstico coincide con la lista, devuelve true."
     public static boolean aciertos(String pronostico) throws Exception {
         DaoPartido daoPartido = new DaoPartidoimpl();
         List<Partido> listaPartidos = daoPartido.listar();

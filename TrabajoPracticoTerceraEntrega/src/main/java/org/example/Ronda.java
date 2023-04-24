@@ -34,6 +34,8 @@ public class Ronda {
 
         }
     }
+   // "Si se aciertan todos los partidos de una ronda (una ronda tiene 6 partidos),
+    // se multiplicarán por los puntos fijados y se añadirá un bonus del doble de los puntos fijados."
 
     public Integer calcularPuntuacion(Integer resultado) throws Exception {
         DaoRonda daoronda = new DaoRondaimpl();
@@ -44,8 +46,8 @@ public class Ronda {
         }
         return puntuacion;
     }
-
-
+// "Si se aciertan todos los partidos de una Fase (una fase tiene 12 partidos)
+// se multiplicarán por los puntos fijados y se añadirá un bonus del doble de los puntos fijados.
     public Integer calcularfinal(Integer resultado) throws Exception {
         DaoRonda daoronda = new DaoRondaimpl();
         int puntos = daoronda.listar();
