@@ -43,24 +43,25 @@ public class Ronda {
 
 
         Integer puntuacion = resultado;
-        if (resultado == 6 * puntos) {
+        if (resultado == 6 * puntos) {//si punto=1 y el participante logra 6 aciertos se le dara un bonus de puntos*2.
             puntuacion += puntos * 2;
         }
         return puntuacion;
     }
-// "Si se aciertan todos los partidos de una Fase (una fase tiene 12 partidos)
-// se multiplicarán por los puntos fijados y se añadirá un bonus del doble de los puntos fijados.
+
+
     public Integer puntuacionFaseCompleta(Integer resultado) throws Exception {
         DaoRonda daoronda = new DaoRondaimpl();
         int puntos = daoronda.listar();
         Integer puntuacion = resultado;
-        if (resultado > 13 * puntos) {
-            puntuacion += puntos * 2;
+        if (resultado > 13 * puntos) {//Se necesitan una cantidad específica de puntos para recibir la bonificación
+            puntuacion += puntos * 2;// "Si el participante acierta una ronda, recibirá 8 puntos. Sin embargo,
+            // si en la segunda ronda solo acierta 5 partidos, el mínimo de puntos necesarios para ganar los puntos por fase serían >13."
         }
         return puntuacion;
     }
 
-
+//Recibe el mapa del la suma de los puntos por ronda
     public void puntuacionFinal(Map<String, Integer> puntuacionesr1) throws Exception {
         Map<String, Integer> puntosExtras = new HashMap<>();
 

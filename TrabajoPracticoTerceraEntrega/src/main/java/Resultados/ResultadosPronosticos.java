@@ -24,15 +24,15 @@ public class ResultadosPronosticos extends Ronda {
 
 
         DaoPronostico daoPronostico = new DaoPronostiocoimpl();
-
+//prinostico ='1', '1', 'Mariana', 'Argentina', 'x', NULL, NULL, 'Arabia Saudita', 'gana Argentina11'
         for (Pronostico pronostico : daoPronostico.listar()) {
-
+//aciertosPartidos contiene los resultados de todos los partidos
             if (aciertosPartidos(pronostico.getResultado()) && pronostico.getRonda() == 1) {
                 String participante = pronostico.getParctipante();
-                Integer contador = puntuacionesr1.get(participante);//ITERA SOBRE TODoS LOS PRONOSTICOS DE MARIANO Y SE AGREGAN LOS PUNTOS SI ACIERTA
+                Integer contador = puntuacionesr1.get(participante);
                 if (contador == null) {
                     contador = 0;
-                }
+                }//Si el participante no tiene una puntuación previa en la ronda 1, se establece su contador a cero.
 
                 contador=contador+puntos;
                 puntuacionesr1.put(participante, contador);//SE GUARDA EL EL MAPA EL NOMBRE  Y LOS PUNTOS
@@ -54,17 +54,19 @@ public class ResultadosPronosticos extends Ronda {
 
         sumarPuntuaciones(puntuacionesr1, puntuacionesr2);//
     }
-//"Se reciben los datos de cada ronda (r1, r2, ) para ser procesados.
+//Se reciben los datos de cada ronda (r1, r2) para ser procesados.
 // Si el participante acierta todos los partidos de la ronda, se le sumarán puntos extras a su puntuación por ronda.
 // si acierta todos los partidos de las dos rondaS se le agregan puntos extras por fase"
     public void sumarPuntuaciones(Map<String, Integer> puntuacionesr1, Map<String, Integer> puntuacionesr2) throws Exception {
         Map<String, Integer> puntosExtras = new HashMap<>();
-
+// se muetran los resultados de la r1 y r2
         mostrarPuntuaciones(puntuacionesr1, "Ronda 1");
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
 
         mostrarPuntuaciones(puntuacionesr2, "Ronda 2");
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
+
+        //---------------------------------------------------------------
 
         for (Map.Entry<String, Integer> entry : puntuacionesr1.entrySet()) {
             String nombre = entry.getKey();
@@ -83,7 +85,7 @@ public class ResultadosPronosticos extends Ronda {
             puntosExtras.put(nombre, puntuacion);
         }
 
-        mostrarPuntuaciones(puntosExtras, "Total Rondas");
+        mostrarPuntuaciones(puntosExtras, "Total Rondas");//itera sobre este mapa y mustra la suma de los puntos  por cada ronda.
         puntuacionFinal(puntosExtras);
 
     }

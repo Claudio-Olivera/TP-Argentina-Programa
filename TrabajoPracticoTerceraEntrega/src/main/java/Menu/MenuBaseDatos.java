@@ -70,7 +70,7 @@ public class MenuBaseDatos {
                     result.calcularPuntuacion();
                     break;
                 case "5":
-                    System.out.println(Colores.moradoBrillante("Ingrese los punto por acierto: \n"));
+                    System.out.println(Colores.moradoBrillante("Ingrese los puntos por acierto: \n"));
                     Scanner sc = new Scanner(System.in);
                     int puntos = sc.nextInt();
                     Ronda ronda = new Ronda();
