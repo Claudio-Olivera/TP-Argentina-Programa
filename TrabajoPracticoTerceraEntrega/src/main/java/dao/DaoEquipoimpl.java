@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DaoEquipoimpl extends Conexion implements DaoEquipo {
-
+//esta clase es una implementación de una interfaz de
+// acceso a datos para manejar objetos "Equipo" y utiliza una clase
+// de conexión para interactuar con una base de datos.
 
     @Override
     public List<Equipo> listar() throws Exception {
