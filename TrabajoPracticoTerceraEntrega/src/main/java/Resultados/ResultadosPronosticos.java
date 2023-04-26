@@ -10,7 +10,7 @@ import org.example.Ronda;
 import java.util.HashMap;
 import java.util.Map;
 
-import static Resultados.ResultadosPartidos.aciertos;
+import static Resultados.ResultadosPartidos.aciertosPartidos;
 
 public class ResultadosPronosticos extends Ronda {
 //"Guarda los pronósticos de cada participante (resultado del partido, ronda y número de partido) en un mapa separado por ronda.
@@ -27,8 +27,8 @@ public class ResultadosPronosticos extends Ronda {
 
         for (Pronostico pronostico : daoPronostico.listar()) {
 
-            if (aciertos(pronostico.getResultado()) && pronostico.getRonda() == 1) {
-                String participante = pronostico.getParctipante();//Ejemplo:MARIANO GANA ARGENTINA ,RONDA 1 PARTIDO 1
+            if (aciertosPartidos(pronostico.getResultado()) && pronostico.getRonda() == 1) {
+                String participante = pronostico.getParctipante();
                 Integer contador = puntuacionesr1.get(participante);//ITERA SOBRE TODoS LOS PRONOSTICOS DE MARIANO Y SE AGREGAN LOS PUNTOS SI ACIERTA
                 if (contador == null) {
                     contador = 0;
@@ -39,10 +39,10 @@ public class ResultadosPronosticos extends Ronda {
             }
         }
         for (Pronostico pronostico : daoPronostico.listar()) {
-            if (aciertos(pronostico.getResultado()) && pronostico.getRonda() == 2) {
+            if (aciertosPartidos(pronostico.getResultado()) && pronostico.getRonda() == 2) {
                 String participante = pronostico.getParctipante();
                 Integer contador = puntuacionesr2.get(participante);
-                if (contador == null) {
+                if (contador == null) {//si el contador es nulo (es decir, no tiene un valor asignado), se le asigna un valor inicial de cero para que pueda ser utilizado en la línea
                     contador = 0;
                 }
 
@@ -57,7 +57,7 @@ public class ResultadosPronosticos extends Ronda {
 //"Se reciben los datos de cada ronda (r1, r2, ) para ser procesados.
 // Si el participante acierta todos los partidos de la ronda, se le sumarán puntos extras a su puntuación por ronda.
 // si acierta todos los partidos de las dos rondaS se le agregan puntos extras por fase"
-    public Map<String, Integer> sumarPuntuaciones(Map<String, Integer> puntuacionesr1, Map<String, Integer> puntuacionesr2) throws Exception {
+    public void sumarPuntuaciones(Map<String, Integer> puntuacionesr1, Map<String, Integer> puntuacionesr2) throws Exception {
         Map<String, Integer> puntosExtras = new HashMap<>();
 
         mostrarPuntuaciones(puntuacionesr1, "Ronda 1");
@@ -69,14 +69,14 @@ public class ResultadosPronosticos extends Ronda {
         for (Map.Entry<String, Integer> entry : puntuacionesr1.entrySet()) {
             String nombre = entry.getKey();
             Integer resultado = entry.getValue();
-            Integer puntuacion = calcularPuntuacion(resultado);
+            Integer puntuacion = puntuacionRondaCompleta(resultado);
             puntosExtras.put(nombre, puntuacion);
         }
 
         for (Map.Entry<String, Integer> entry : puntuacionesr2.entrySet()) {
             String nombre = entry.getKey();
             Integer resultado = entry.getValue();
-            Integer puntuacion = calcularPuntuacion(resultado);
+            Integer puntuacion = puntuacionRondaCompleta(resultado);
             if (puntosExtras.containsKey(nombre)) {
                 puntuacion += puntosExtras.get(nombre);
             }
@@ -85,7 +85,7 @@ public class ResultadosPronosticos extends Ronda {
 
         mostrarPuntuaciones(puntosExtras, "Total Rondas");
         puntuacionFinal(puntosExtras);
-        return puntosExtras;
+
     }
 
 }

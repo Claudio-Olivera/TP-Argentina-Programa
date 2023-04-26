@@ -37,9 +37,11 @@ public class Ronda {
    // "Si se aciertan todos los partidos de una ronda (una ronda tiene 6 partidos),
     // se multiplicarán por los puntos fijados y se añadirá un bonus del doble de los puntos fijados."
 
-    public Integer calcularPuntuacion(Integer resultado) throws Exception {
+    public Integer puntuacionRondaCompleta(Integer resultado) throws Exception {
         DaoRonda daoronda = new DaoRondaimpl();
         int puntos = daoronda.listar();
+
+
         Integer puntuacion = resultado;
         if (resultado == 6 * puntos) {
             puntuacion += puntos * 2;
@@ -48,11 +50,11 @@ public class Ronda {
     }
 // "Si se aciertan todos los partidos de una Fase (una fase tiene 12 partidos)
 // se multiplicarán por los puntos fijados y se añadirá un bonus del doble de los puntos fijados.
-    public Integer calcularfinal(Integer resultado) throws Exception {
+    public Integer puntuacionFaseCompleta(Integer resultado) throws Exception {
         DaoRonda daoronda = new DaoRondaimpl();
         int puntos = daoronda.listar();
         Integer puntuacion = resultado;
-        if (resultado >= 12 * puntos) {
+        if (resultado > 13 * puntos) {
             puntuacion += puntos * 2;
         }
         return puntuacion;
@@ -69,7 +71,7 @@ public class Ronda {
         for (Map.Entry<String, Integer> entry : puntuacionesr1.entrySet()) {
             String nombre = entry.getKey();
             Integer resultado = entry.getValue();
-            Integer puntuacion = calcularfinal(resultado);
+            Integer puntuacion = puntuacionFaseCompleta(resultado);
             puntosExtras.put(nombre, puntuacion);
         }
         mostrarPuntuaciones(puntosExtras, "Total Final de la Fase");
